@@ -1,0 +1,40 @@
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--line);background:#fff;color:#625d52;border-radius:6px;padding:8px 10px;font-size:10px;white-space:nowrap;min-height:33px}
+.theme-toggle:hover{border-color:var(--gold);color:#8c6d2e}
+.login-content{position:relative}
+.login-theme-toggle{position:absolute;right:25px;top:22px}
+:root[data-theme='dark']{color-scheme:dark;--ink:#eeeae0;--muted:#b6b1a5;--gold:#d7b365;--gold-soft:#342c1c;--line:#373930;--bg:#131510;--green:#a2c3a4;--surface:#1d2019;--raised:#25291f;--quiet:#b8b4a7;--accent:#e2c483}
+:root[data-theme='dark'] :is(.topbar,.card,.metric,.modal,.customer-card,.catalog-card,.admin-quick-actions>button,.inventory-matrix>td>div){background:var(--surface);border-color:var(--line)}
+:root[data-theme='dark'] :is(.login-shell,.login-content){background:var(--bg)}
+:root[data-theme='dark'] :is(.secondary,.theme-toggle,.period,.search,.sale-tabs button.selected){background:var(--raised);border-color:var(--line);color:var(--ink)}
+:root[data-theme='dark'] :is(.secondary:hover,.theme-toggle:hover,.icon-btn:hover,.admin-quick-actions>button:hover,.operational-pending button:hover){background:#303528;color:var(--accent);border-color:var(--gold)}
+:root[data-theme='dark'] .primary{background:#c6a255;color:#171b12;border-color:#c6a255}
+:root[data-theme='dark'] .primary:hover{background:#ddbc77;border-color:#ddbc77}
+:root[data-theme='dark'] :is(.metric.gold,.operations-strip,.setup-panel,.demo-banner,.mode-toggle,.calculator-result,.waterfall .result,.form-note,.atacado-note,.detail-notes,.catalog-notice,.photo-selector,.sale-variant-picker,.report-insight,.toast){background:#2a281e;border-color:#49402b;color:var(--accent)}
+:root[data-theme='dark'] :is(.sale-tabs,.table-note,.inventory-matrix>td,.variant-table>summary,.operational-pending>div:last-child,.post-reference){background:#20241b;border-color:var(--line)}
+:root[data-theme='dark'] :is(input,select,textarea,.field input,.field select,.login-card .field input,.toolbar select,.reference-row select,.color-control select,.size-control select,.admin-variant-controls select,.cart-row input){background:#171b13;border-color:#454a3b;color:var(--ink)}
+:root[data-theme='dark'] .search input{background:transparent}
+:root[data-theme='dark'] input::placeholder{color:#a29f94}
+:root[data-theme='dark'] .period select{background:transparent}
+:root[data-theme='dark'] :is(th,.inventory-matrix th){background:#23271e;color:var(--quiet);border-color:var(--line)}
+:root[data-theme='dark'] :is(td,.alert-row,.rank-row,.receivable-row,.cart-row,.cart-items,.cart-subtotal,.sale-total,.detail-item,.modal-actions,.variant-table,.variant-prices,.reference-row,.reference-models,.admin-settings-list>div,.operations-strip>div,.customer-stats,.waterfall>div,.settings-content hr){border-color:var(--line)}
+:root[data-theme='dark'] :is(.metric-icon,.avatar.light,.customer-avatar,.channel>div>span,.alert-icon){background:#343524;color:var(--accent)}
+:root[data-theme='dark'] .metric.gold .metric-icon{background:#40371f;color:var(--accent)}
+:root[data-theme='dark'] :is(.badge,.badge.neutral){background:#30342a;color:#d0cbbd}
+:root[data-theme='dark'] .badge.amber{background:#3b301a;color:#efcc80}
+:root[data-theme='dark'] :is(.badge.green,.real-banner){background:#243322;color:#b4d5ac;border-color:#3a5033}
+:root[data-theme='dark'] :is(.badge.red,.form-error,.error-box){background:#3e241e;color:#ffc0aa;border-color:#704333}
+:root[data-theme='dark'] .negative{color:#ffb79d!important}
+:root[data-theme='dark'] :is(.breadcrumb strong,.admin-quick-actions strong,.stock-summary b,.empty h3,.waterfall strong,.operations-strip strong,.operational-pending button strong,.sale-total strong,.variant-prices strong,.sale-choice-price strong,.form-note strong){color:var(--ink)}
+:root[data-theme='dark'] :is(.intro p,.breadcrumb,.private-note,.metric-top,.metric-detail,.section-head p,.chart-range,.chart-legend,.chart-legend small,.empty,.empty p,.empty>svg,.modal-head p,.field>span,.stock-summary>span,.table-note,.waterfall>div,.channel small,.admin-quick-actions small,.operations-strip small,.setup-panel p,.operational-pending button span,.admin-settings-store p,.admin-settings-list dd,.admin-photo-picker>p,.reference-row small,.detail-title p,.detail-item small,.catalog-info>p,.variant-stock>small,.variant-prices small,.no-photo,.login-card>p,.login-footnote,.password-field>small,.login-loading,footer,footer small){color:var(--quiet)}
+:root[data-theme='dark'] :is(td small,.alert-row small,.rank-row small,.product-cell small,.model-meta>small,.post-reference>p){color:var(--quiet)}
+:root[data-theme='dark'] :is(.text-btn,.icon-btn,.eyebrow,.admin-inventory-head,.admin-settings-list dt,.inventory-matrix h3,.password-message,.password-field>div>button,.color-control>label>span,.size-control>span,.photo-detail>p,.owner-only-note,.waterfall .result strong,.metric.gold .metric-detail){color:var(--accent)}
+:root[data-theme='dark'] .owner-only-note{color:var(--accent)!important}
+:root[data-theme='dark'] :is(.gallery-stage,.model-photo,.garment.photo,.model-photo .photo-open img,.admin-product-photo .garment.photo img,.reference-row>img,.catalog-image){background:#292e23}
+:root[data-theme='dark'] :is(.photo-arrow,.photo-color-label,.catalog-image>span){background:#1d2019ee;color:var(--accent);border-color:#55503e}
+:root[data-theme='dark'] :is(.report-bar>div,.channel-bar){background:#3a3e32}
+:root[data-theme='dark'] .overlay{background:#050704b8}
+:root[data-theme='dark'] .chart svg text{fill:var(--quiet)}
+:root[data-theme='dark'] .chart svg line{stroke:#393d30}
+:root[data-theme='dark'] .swatches button{border-color:#ffffff55}
+@media(max-width:1100px){.top-actions{gap:10px}.top-actions .theme-toggle span{display:none}.top-actions .theme-toggle{width:33px;padding:7px}}
+@media(max-width:700px){.login-theme-toggle{right:20px;top:18px}.login-content{padding-top:75px}.top-actions{gap:7px}}
